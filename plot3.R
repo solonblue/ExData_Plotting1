@@ -11,7 +11,7 @@ data$Minute = data$DateTime$min
 
 png(file = "plot3.png", 480, 480)
 with(data, plot(DateTime, Sub_metering_1, type = "l", col = "black", 
-                ylab = "Energy sub metering"))
+                ylab = "Energy sub metering", xlab = ""))
 with(data, lines(DateTime, Sub_metering_2, col = "red"))
 with(data, lines(DateTime, Sub_metering_3, col = "blue"))
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
