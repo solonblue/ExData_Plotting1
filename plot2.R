@@ -11,5 +11,5 @@ data$Minute = data$DateTime$min
 
 png(file = "plot2.png", 480, 480)
 with(data, plot(DateTime, Global_active_power, type = "l",
-                ylab = "Global Active Power (kilowatts"))
+                ylab = "Global Active Power (kilowatts)", xlab = ""))
 dev.off()
